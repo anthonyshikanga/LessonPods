@@ -4,9 +4,14 @@
 			<a href="index.html" id="logo">LessonPods</a>
 			<nav>
 				<ul>
+				<% unless podcast_signed_in? %>
 					<li><a href="podcasts.html">Explore</a></li>
-					<li><a href="sign-in.html">Sign In</a></li>
-					<li><a href="podcasts.html">Create a podcast</a></li>
+					<li><%= link_to "Sign In", new_podcast_session_path %></li>
+					<li><%= link_to "Create a Podcast", new_podcast_registration_path %></li>
+					<%else%>
+					<li><a href="podcasts.html">Explore</a></li>
+					<li><%= link_to "Sign Out", destroy_podcast_session_path, method: :delete %></li>
+					<% end %>
 				</ul>
 			</nav>
 		</div>
@@ -14,7 +19,7 @@
 	</header>
 	<div class="wrapper_skinny">
 	<h1>Discover your new favourite<br> podcast, or create your own.</h1>
-	<a href="sign-up.html" class="button button_highlight">Create a Podcast</a>
+	<%= link_to "Create a Podcast", new_podcast_registration_path, class:"button button_highlight"%>
 	<a href="podcasts.html" class="button button_white">Explore</a>
 	</div>
 </div>
