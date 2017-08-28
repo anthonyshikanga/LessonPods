@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* line 6, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 10, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+body {
+  font-family: ‘Lato’, sans-serif;
+  background: #FFFFFF;
+}
+
+/* line 15, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.wrapper_wide {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* line 20, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 25, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.wrapper_skinny {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* line 30, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.responsive_break {
+  white-space: nowrap;
+}
+
+/* line 34, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.cf:before,
+.cf:after {
+  content: “ “;
+  display: table;
+}
+
+/* line 40, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 44, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  outline: none;
+  border: none;
+}
+
+/* line 54, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button_block {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 59, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button_highlight {
+  background: #EE7964;
+  transition: background .4s ease-in-out;
+}
+/* line 62, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button_highlight:hover {
+  background: #ea5b42;
+}
+
+/* line 67, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button_white {
+  background: #FFFFFF;
+  color: #2C3135;
+  transition: background .4s ease-in-out;
+}
+/* line 71, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.button_white:hover {
+  background: #ececec;
+}
+
+/* line 76, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header {
+  color: #2C3135;
+  background: #FFFFFF;
+  padding: 2.5rem 0;
+}
+/* line 80, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2C3135;
+  text-decoration: none;
+}
+/* line 87, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header nav {
+  float: right;
+}
+/* line 89, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 92, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header nav ul li {
+  display: inline;
+  margin-left: 2rem;
+  position: relative;
+}
+/* line 96, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header nav ul li a {
+  color: #2C3135;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+/* line 101, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#main_header nav ul li a:hover {
+  color: #EE7964;
+}
+
+/* line 110, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 114, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#banner h1 {
+  text-align: center;
+  padding: 8.5rem 0;
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+/* line 125, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.podcasts_banner {
+  background-image: url(/images/podcasts_banner.jpg);
+  margin-bottom: 4rem;
+}
+
+/* line 130, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.sign_up_banner {
+  background-image: url(/images/sign_up_banner.jpg);
+}
+
+/* line 134, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.sign_in_banner {
+  background-image: url(/images/sign_in_banner.jpg);
+}
+
+/* line 138, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination:before,
+.pagination:after {
+  content: “ “;
+  display: table;
+}
+
+/* line 144, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination:after {
+  clear: both;
+}
+
+/* line 148, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination {
+  text-align: center;
+  margin: 2rem 0;
+}
+/* line 151, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination a, .pagination .previous_page, .pagination .current, .pagination .next_page {
+  padding: 0.75rem 1rem;
+  margin: 0 .25rem;
+  border-radius: .15rem;
+  line-height: 20px;
+  text-decoration: none;
+  background-color: #EDEFF5;
+  font-weight: 700;
+  font-size: .7rem;
+  font-style: normal;
+  color: #2C3135;
+}
+/* line 162, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination a:hover, .pagination .previous_page:hover, .pagination .current:hover, .pagination .next_page:hover {
+  background: #EE7964;
+  color: #FFFFFF;
+}
+/* line 167, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination .disabled {
+  color: #C0C0C0;
+}
+/* line 169, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination .disabled:hover {
+  color: #C0C0C0;
+}
+/* line 173, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.pagination .current {
+  background: #EE7964;
+  color: #FFFFFF;
+}
+
+/* line 179, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#form {
+  padding: 3rem 3.5%;
+  background: #FFFFFF;
+  border-radius: .35rem;
+}
+/* line 183, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+#form .title {
+  color: #2C3135;
+  text-align: center;
+}
+
+/* line 189, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+.field {
+  margin: .5rem 0 1.5rem 0;
+}
+
+/* line 193, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+input[type=”email”], input[type=”text”], input[type=”password”], textarea {
+  width: 100%;
+  height: 2.5rem;
+  padding: .5rem 1rem;
+  background: #EDEFF5;
+  border: 1px solid #dde0ec;
+  border-radius: .35rem;
+  margin-top: .5rem;
+}
+
+/* line 202, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+input[type=”file”] {
+  margin-top: .5rem;
+}
+
+/* line 206, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/application.scss */
+textarea {
+  height: 8rem;
+}
+
+/* line 1, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background {
+  height: 100vh;
+  background-image: url(/assets/baby+in+headphones-cf157e716cc986b19e660ccc8d4e92c52c8e696f1f159c969333f63a38353c74.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+/* line 7, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header {
+  color: #FFFFFF;
+  padding: 3rem 0;
+}
+/* line 10, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header #logo {
+  float: left;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 17, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header nav {
+  float: right;
+}
+/* line 19, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul {
+  list-style: none;
+  margin: 0;
+}
+/* line 22, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li {
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative;
+}
+/* line 26, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+/* line 34, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background h1 {
+  color: #FFFFFF;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 7rem 0 2rem 0;
+}
+/* line 41, /home/shiks/Desktop/LessonPods/app/assets/stylesheets/welcome.css.scss */
+#background .button {
+  min-width: 130px;
+  display: inline-block;
+  margin: 1.5rem 2.5% 0 2.5%;
+}
