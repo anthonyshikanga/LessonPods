@@ -7,6 +7,7 @@ end
 
 ruby '2.2.3'
 
+gem 'devise'
 gem 'rails', '~> 5.1.3'
 gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
