@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170830094729) do
+ActiveRecord::Schema.define(version: 20170831083728) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,10 @@ ActiveRecord::Schema.define(version: 20170830094729) do
     t.datetime "updated_at", null: false
     t.string "title"
     t.text "description"
+    t.string "thumbnail_file_name"
+    t.string "thumbnail_content_type"
+    t.integer "thumbnail_file_size"
+    t.datetime "thumbnail_updated_at"
     t.index ["email"], name: "index_podcasts_on_email", unique: true
     t.index ["reset_password_token"], name: "index_podcasts_on_reset_password_token", unique: true
   end
