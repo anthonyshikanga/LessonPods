@@ -1,17 +1,17 @@
 <div id="podcast_show">
   <div id="show_banner">
     <div class="wrapper_skinny">
-      <h1>Mr.Kimani Dashboard</h1>
+      <h1>Linear Equations</h1>
     </div>
   </div>
 
   <div id="links">
     <div class="wrapper_skinny">
       <ul>
-        <li><a href="#">Episodes</a></li>
-        <li><a href="#">New Episode</a></li>
+        <li><%= link_to "Episodes", root_path %></li>
+        <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
         <li><%= link_to "Account Settings", edit_podcast_registration_path, class: "current" %></li>
-        <li><a href="#">View Podcast</a></li>
+        <li><%= link_to "View Podcast", podcast_path(current_podcast) %></li>
       </ul>
     </div>
   </div>
@@ -33,11 +33,6 @@
       </div>
 
       <div class="field">
-        <%= f.label :thumbnail %><br />
-        <%= f.file_field :thumbnail %>
-      </div>
-
-      <div class="field">
         <%= f.label :email %><br />
         <%= f.email_field :email %>
       </div>
@@ -46,8 +41,9 @@
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
 
+      
       <div class="field">
-        <%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
+<%= f.label :password %> <i>(leave blank if you don't want to change it)</i><br />
         <%= f.password_field :password, autocomplete: "off" %>
       </div>
 
