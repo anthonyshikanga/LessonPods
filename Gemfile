@@ -7,6 +7,7 @@ end
 
 ruby '2.2.3'
 
+gem 'paperclip', '~> 4.2.1'
 gem 'devise'
 gem 'rails', '~> 5.1.3'
 gem 'pg', '~> 0.18'
