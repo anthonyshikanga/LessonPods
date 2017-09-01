@@ -1,4 +1,4 @@
-class AddAttachmentMp3ToEpisodes < ActiveRecord::Migration
+class AddAttachmentMp3ToEpisodes < ActiveRecord::Migration[5.1]
   def self.up
     change_table :episodes do |t|
       t.attachment :mp3
