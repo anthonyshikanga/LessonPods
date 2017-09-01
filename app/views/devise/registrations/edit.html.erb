@@ -1,16 +1,16 @@
 <div id="podcast_show">
   <div id="show_banner">
     <div class="wrapper_skinny">
-      <h1>Linear Equations</h1>
+      <h1><%= @podcast.title %></h1>
     </div>
   </div>
 
   <div id="links">
     <div class="wrapper_skinny">
       <ul>
-        <li><%= link_to "Episodes", root_path %></li>
-        <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
-        <li><%= link_to "Account Settings", edit_podcast_registration_path, class: "current" %></li>
+        <li><%= link_to "Lessons", root_path %></li>
+        <li><%= link_to "New Lesson", new_podcast_episode_path(@podcast) %></li>
+        <li><%= link_to "Channel Settings", edit_podcast_registration_path, class: "current" %></li>
         <li><%= link_to "View Podcast", podcast_path(current_podcast) %></li>
       </ul>
     </div>
@@ -67,7 +67,7 @@
       </div>
     <% end %>
 
-    <h3>Cancel my account</h3>
+    <h3>Delete account</h3>
 
     <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
 </div>

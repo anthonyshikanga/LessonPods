@@ -9,7 +9,7 @@ $light: #EDEFF5;
 
 body {
   font-family: ‘Lato’, sans-serif;
-  background: $white;
+  background: #F5F3EE;
 }
 
 .wrapper_wide {
@@ -86,6 +86,7 @@ body {
   }
   nav {
     float: right;
+    color: #00FF80;
     ul {
       list-style: none;
       margin: 0;

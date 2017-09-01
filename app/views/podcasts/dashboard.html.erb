@@ -11,9 +11,9 @@
   <div id="links">
     <div class="wrapper_skinny">
       <ul>
-        <li class="current">Episodes</li>
-        <li><%= link_to "New Episode", new_podcast_episode_path(@podcast) %></li>
-        <li><%= link_to "Account Settings", edit_podcast_registration_path %></li>
+        <li class="current">Lessons</li>
+        <li><%= link_to "New Lesson", new_podcast_episode_path(@podcast) %></li>
+        <li><%= link_to "Channel Settings", edit_podcast_registration_path %></li>
         <li><%= link_to "View Podcast", podcast_path(current_podcast) %></li>
       </ul>
     </div>
@@ -33,7 +33,7 @@
               <h2><%= link_to episode.title, podcast_episode_path(@podcast, episode) %></h2>
               <p class="description"><%= truncate(episode.description, lenght: 160) %></p>
               <div class="authorized_links">
-                <%= link_to "Edit", edit_podcast_episode_path(@podcast, episode) %>
+                <%= link_to "Edit", edit_podcast_episode_path(@podcast, episode), class: "button button_danger" %>
                 <%= link_to "Delete", podcast_episode_path(@podcast, episode), method: :delete, data: {confirm: "Are you sure?"} %>
               </div>
             </div>
