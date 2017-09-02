@@ -8,6 +8,19 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,700,300italic,700italic' rel='stylesheet' type='text/css'>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+     
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrp-theme.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   </head>
 
   <body>
@@ -19,9 +32,10 @@
   <% unless current_page?(root_path) %>
 	<%= render 'layouts/header'; %>
   <% end %>
+ <%= yield %>
 
-  
-    <%= yield %>
+
+ <%= render 'footer'; %>
 
   </body>
 </html>

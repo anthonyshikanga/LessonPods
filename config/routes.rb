@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :hearts
   devise_for :podcasts
 
-  mount Commontator::Engine => '/commontator'
+  
   
 
   resources :podcasts, only: [:index, :show] do

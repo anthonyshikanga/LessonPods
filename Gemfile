@@ -7,7 +7,8 @@ end
 
 ruby '2.2.3'
 
-gem 'commontator'
+gem 'stripe'
+
 gem 'paperclip', '~> 4.2.1'
 gem 'devise'
 gem 'rails', '~> 5.1.3'
