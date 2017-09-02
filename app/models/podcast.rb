@@ -5,6 +5,8 @@ class Podcast < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
   has_many :episodes
 
+    acts_as_commontator
+
   has_attached_file :thumbnail, :styles => { :large => "1000x1000#", :medium => "550x550#" }
 validates_attachment_content_type :thumbnail, :content_type => /\Aimage\/.*\Z/
 
