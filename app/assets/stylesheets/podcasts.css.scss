@@ -150,6 +150,10 @@
     float: left;
     margin: 3px;
     padding: 3px;
+
+    h1 {
+
+    }
 }
   #episode_content {
     padding: 4rem 0;
@@ -161,6 +165,9 @@
       width: 10rem;
       max-width: 100%;
       border-radius: .35rem;
+    }
+    #testimonials {
+      float: center;
     }
     h2 {
       font-size: 1.5rem;
