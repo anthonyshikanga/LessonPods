@@ -7,7 +7,7 @@ end
 
 ruby '2.2.3'
 
-gem 'stripe'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 gem 'paperclip', '~> 4.2.1'
 gem 'devise'
