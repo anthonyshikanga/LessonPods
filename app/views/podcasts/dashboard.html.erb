@@ -8,17 +8,18 @@
   </div>
 
   
-  <div id="links">
+ <div id="links">
     <div class="wrapper_skinny">
       <ul>
-        <li class="current">Lessons</li>
-        <li><%= link_to "New Lesson", new_podcast_episode_path(@podcast) %></li>
-        <li><%= link_to "Channel Settings", edit_podcast_registration_path %></li>
-        <li><%= link_to "View Podcast", podcast_path(current_podcast) %></li>
+        <li><%= link_to "Lessons", root_path, class: "button button_highlight button_block" %></li>
+        <li><%= link_to "New Lesson", new_podcast_episode_path(@podcast), class: "button button_highlight button_block" %></li>
+        <li><%= link_to "Account Settings", edit_podcast_registration_path, class: "button button_highlight button_block" %></li>
+        <li><%= link_to "View Podcast", podcast_path(current_podcast), class: "button button_highlight button_block" %></li>
       </ul>
     </div>
   </div>
 
+<hr>
   <div id="episodes">
     <div class="wrapper_skinny">
       <ul class="cf">

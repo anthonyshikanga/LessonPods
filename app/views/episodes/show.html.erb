@@ -78,3 +78,34 @@
         </div>
 	</div>
 </div>
+
+<div class="pagination">
+	<span class="previous_page disabled">Previous</span>
+	<em class="current">1</em>
+	<a href="#">2</a>
+	<a class="next_page" href="#">Next</a>
+</div>
+
+<button id="toggle-box" >toggle</button>
+<div id="box" style="display: none;"></div>
+
+<script>
+	$(document).ready(function(){
+	  $("#jquery_jplayer_1").jPlayer({
+	    ready: function () {
+	      $(this).jPlayer("setMedia", {
+	        mp3: "<%= @episode.mp3.url %>",
+	      });
+	    },
+	    swfPath: "/js",
+	    supplied: "mp3"
+	  });
+	});
+	</script>
+
+	<script>
+		$('#toggle-box').click().toggle(function() {
+    
+    $('#box').animate({ width: 'show' });
+});
+	</script>

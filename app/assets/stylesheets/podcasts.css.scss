@@ -138,6 +138,19 @@
       }
     }
   }
+  img {
+    max-width: 100%;
+    height: auto;
+}
+
+.item {
+    width: 120px;
+    height: 120px;
+    height: auto;
+    float: left;
+    margin: 3px;
+    padding: 3px;
+}
   #episode_content {
     padding: 4rem 0;
     margin-bottom: 4rem;
@@ -162,7 +175,7 @@
     a {
       text-decoration: none;
     }
-    
+
     .jp-jplayer,.jp-audio {
     width: 70%;
     margin: 3rem auto .5rem auto;
@@ -291,4 +304,9 @@ border-radius: 20px 20px 20px 20px;
       }
     }
   }
+}
+#box {
+    background-color: grey;
+    height: 200px;
+    width: 200px;
 }

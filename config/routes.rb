@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :hearts
   devise_for :podcasts
   
 
